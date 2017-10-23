@@ -58,7 +58,7 @@ public class FouilleRep {
 
                     while (line != null) {
                         count++;
-                        if (line.contains(" " + str + " ")) {
+                        if ((line.contains(" " + str + " "))||(line.contains(" " + str)||(line.contains(str + " ")) ) ){
                             Ytrouve.add(String.valueOf(count));
                             sb.append(line);
                             sb.append(System.lineSeparator());

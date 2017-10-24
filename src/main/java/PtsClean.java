@@ -13,7 +13,10 @@ public class PtsClean {
         str= str.replace("?","");
         str= str.replace("!","");
         str= str.replace("'"," ");
-        str= str.replace("  "," ");
+        str= str.replace("_"," ");
+        str= str.replace("-"," ");
+        str= str.replace(";"," ");
+
 
         return str;
     }

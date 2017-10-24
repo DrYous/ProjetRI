@@ -30,7 +30,7 @@ public int rechercheWord (String path, String word) throws FileNotFoundException
 
             while (line != null) {
                 count++;
-                if (line.contains(" "+word+" ")||line.contains(" "+word)||line.contains(word+" ")){
+                if (line.contains(" "+word+" ")){
                     Ytrouve.add(String.valueOf(count));
                     result++;
                     sb.append(line);
